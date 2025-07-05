@@ -1,6 +1,6 @@
 ---
-                                                            PROYECTO FINAL: PLATAFORMA DE MICROCREDITOS PEER-TO-PEER (P2P) - MySQL
----
+![Portada](Portada.png)
+
 ---
 Introducción
 ---
