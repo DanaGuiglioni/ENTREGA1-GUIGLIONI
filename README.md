@@ -1,5 +1,5 @@
 ---
-![Portada](Portada.png)
+![Portada](IMAGES/Portada.png)
 
 ---
 Introducción
@@ -13,8 +13,7 @@ Este trabajo propone el diseño de una plataforma de microcréditos P2P en MySQL
 Diagrama Entidad-Relación (DER)
 ---
 
-![Diagrama Entidad-Relacion](Diagrama-ER.png)
-
+![Diagrama Entidad-Relacion](IMAGES/Diagrama-ER.png)
 
 ---
 Listado de Tablas
