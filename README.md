@@ -6,4 +6,6 @@ El surgimiento y avance de la economía digital, junto con la introducción de n
 
 Este trabajo propone el diseño de una plataforma de microcréditos P2P en MySQL Workbench que permita almacenar, organizar y analizar información clave sobre los usuarios del sistema, así como de las solicitudes de préstamos y su financiamiento, encargándose de la gestión integral del proceso de otorgamiento desde la presentación inicial hasta la devolución de los fondos.
 
+![Diagrama Entidad-Relacion](Diagrama-ER.png)
+
 
