@@ -15,6 +15,7 @@ Diagrama Entidad-Relación (DER)
 
 ![Diagrama Entidad-Relacion](Diagrama-ER.png)
 
+
 ---
 Listado de Tablas
 ---
