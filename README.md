@@ -621,12 +621,23 @@ Triggers
    SELECT * FROM Transacciones WHERE id_transaccion = 46;
    ```
 
-   ---
-   Informes
-   ---
+---
+Archivos SQL
+---
 
-   Los gráficos generados a partir de vistas construidas sobre la base de datos de la plataforma permiten obtener una visión consolidada y cuantitativa del funcionamiento del sistema de microcréditos. Cada uno de ellos se enfocó en un aspecto clave del modelo, brindando información relevante para la gestión de riesgos, la evaluación de la actividad crediticia y la toma de decisiones.
+- [Creacion de Base de Datos y Tablas](SCRIPTS/01-STRUCTURE.sql)
+- [Inserción de Datos](SCRIPTS/02-POPULATION.sql)
+- [Creacion de Vistas](SCRIPTS/03-VIEWS.sql)
+- [Creacion de Funciones](SCRIPTS/04-FUNCTIONS.sql)
+- [Creacion de Procedimientos Almacenados](SCRIPTS/05-STORED-PROCEDURES.sql)
+- [Creacion de Triggers](SCRIPTS/06-TRIGGERS.sql)
 
-   El análisis de la distribución geográfica del crédito por provincia evidenció diferencias significativas en la demanda de préstamos. De nueve préstamos otorgados, el 44% se concentró en la provincia de Buenos Aires (cuatro préstamos), mientras que Santa Fe representó el 22% (dos préstamos), y las provincias de Chaco, Mendoza y San Juan registraron un préstamo cada una (11% respectivamente). Esta distribución permite identificar una concentración relativa en ciertas regiones, como en la capital del país, sugiriendo oportunidades para aumentar la asignación de recursos en dichas áreas, o para mejorar la equidad en el acceso al crédito en las restantes.
+---
+Informes
+---
+
+Los gráficos generados a partir de vistas construidas sobre la base de datos de la plataforma permiten obtener una visión consolidada y cuantitativa del funcionamiento del sistema de microcréditos. Cada uno de ellos se enfocó en un aspecto clave del modelo, brindando información relevante para la gestión de riesgos, la evaluación de la actividad crediticia y la toma de decisiones.
+
+El análisis de la distribución geográfica del crédito por provincia evidenció diferencias significativas en la demanda de préstamos. De nueve préstamos otorgados, el 44% se concentró en la provincia de Buenos Aires (cuatro préstamos), mientras que Santa Fe representó el 22% (dos préstamos), y las provincias de Chaco, Mendoza y San Juan registraron un préstamo cada una (11% respectivamente). Esta distribución permite identificar una concentración relativa en ciertas regiones, como en la capital del país, sugiriendo oportunidades para aumentar la asignación de recursos en dichas áreas, o para mejorar la equidad en el acceso al crédito en las restantes.
 
    
