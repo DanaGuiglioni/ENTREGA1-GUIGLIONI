@@ -640,4 +640,9 @@ Los gráficos generados a partir de vistas construidas sobre la base de datos de
 
 El análisis de la distribución geográfica del crédito por provincia evidenció diferencias significativas en la demanda de préstamos. De nueve préstamos otorgados, el 44% se concentró en la provincia de Buenos Aires (cuatro préstamos), mientras que Santa Fe representó el 22% (dos préstamos), y las provincias de Chaco, Mendoza y San Juan registraron un préstamo cada una (11% respectivamente). Esta distribución permite identificar una concentración relativa en ciertas regiones, como en la capital del país, sugiriendo oportunidades para aumentar la asignación de recursos en dichas áreas, o para mejorar la equidad en el acceso al crédito en las restantes.
 
-   
+![Distribucion del Credito por Provincia](IMAGES/DistribucionCreditoporProvincia.png)
+
+
+
+
+
