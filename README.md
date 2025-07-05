@@ -2,7 +2,7 @@
 ![Portada](IMAGES/Portada.png)
 
 ---
-Introducción
+ℹ️ Introducción
 ---
 
 El surgimiento y avance de la economía digital, junto con la introducción de nuevas fuentes de financiamiento, están cambiando la forma en la que manejamos nuestro dinero. Los sistemas de financiamiento entre pares (Peer-to-Peer o P2P) representan una gran alternativa frente al crédito tradicional. Estos modelos conectan de manera directa a personas que necesitan dinero con aquellas dispuestas a prestarlo a través de plataformas digitales, que se encargan de gestionar, evaluar, asignar y devolver los fondos, eliminando la necesidad de intermediación bancaria.
@@ -10,13 +10,13 @@ El surgimiento y avance de la economía digital, junto con la introducción de n
 Este trabajo propone el diseño de una plataforma de microcréditos P2P en MySQL Workbench que permita almacenar, organizar y analizar información clave sobre los usuarios del sistema, así como de las solicitudes de préstamos y su financiamiento, encargándose de la gestión integral del proceso de otorgamiento desde la presentación inicial hasta la devolución de los fondos.
 
 ---
-Diagrama Entidad-Relación (DER)
+📝 Diagrama Entidad-Relación (DER)
 ---
 
 ![Diagrama Entidad-Relacion](IMAGES/Diagrama-ER.png)
 
 ---
-Listado de Tablas
+📄 Listado de Tablas
 ---
 
 1. Usuarios: almacena la información de las personas que utilizan el servicio, ya sea como prestamistas, solicitantes o ambos.
@@ -131,7 +131,7 @@ Listado de Tablas
 
 
 ---
-Vistas
+🔍 Vistas
 ---
 
 1. VISTA: ```Distribucion_Credito_Por_Provincia ```
@@ -314,7 +314,7 @@ Vistas
    ```
 
 ---
-Funciones
+📈 Funciones
 ---
 
 1. FUNCION: ```CalcularRentabilidadPromedio```
@@ -396,7 +396,7 @@ Funciones
    ```
 
 ---
-Stored Procedures
+⏱️ Stored Procedures
 ---
 
 1. STORED PROCEDURE: ```ActualizarEstadoPrestamo```
@@ -509,7 +509,7 @@ Stored Procedures
     ```
 
 ---
-Triggers
+✅ Triggers
 ---
 
 1. TRIGGER: ```tr_actualizar_estado_cuota```
@@ -622,18 +622,23 @@ Triggers
    ```
 
 ---
-Archivos SQL
+📁 Archivos SQL
 ---
 
-- [Creacion de Base de Datos y Tablas](SCRIPTS/01-STRUCTURE.sql)
-- [Inserción de Datos](SCRIPTS/02-POPULATION.sql)
-- [Creacion de Vistas](SCRIPTS/03-VIEWS.sql)
-- [Creacion de Funciones](SCRIPTS/04-FUNCTIONS.sql)
-- [Creacion de Procedimientos Almacenados](SCRIPTS/05-STORED-PROCEDURES.sql)
-- [Creacion de Triggers](SCRIPTS/06-TRIGGERS.sql)
+🛠️ [Creacion de Base de Datos y Tablas](SCRIPTS/01-STRUCTURE.sql)
+
+📥 [Inserción de Datos](SCRIPTS/02-POPULATION.sql)
+
+🔍 [Creacion de Vistas](SCRIPTS/03-VIEWS.sql)
+
+📈 [Creacion de Funciones](SCRIPTS/04-FUNCTIONS.sql)
+
+⏱️ [Creacion de Procedimientos Almacenados](SCRIPTS/05-STORED-PROCEDURES.sql)
+
+✅ [Creacion de Triggers](SCRIPTS/06-TRIGGERS.sql)
 
 ---
-Informes
+📊 Informes
 ---
 
 Los gráficos generados a partir de vistas construidas sobre la base de datos de la plataforma permiten obtener una visión consolidada y cuantitativa del funcionamiento del sistema de microcréditos. Cada uno de ellos se enfocó en un aspecto clave del modelo, brindando información relevante para la gestión de riesgos, la evaluación de la actividad crediticia y la toma de decisiones.
@@ -659,7 +664,7 @@ Por último, el informe sobre los objetivos financieros de los préstamos brind�
 ![Objetivos Financieros de los Usuarios](IMAGES/Objetivos_Financieros_Usuarios.png)
 
 ---
-Herramientas y Tecnologías utilizadas
+📝 Herramientas y Tecnologías utilizadas
 ---
 
 ➢ MySQL Workbench: herramienta utilizada para generar la base de datos relacional de la plataforma, junto con los objetos que la componen (vistas, funciones, stored procedures y triggers) y la versión final del diagrama de entidad-relación.
@@ -677,7 +682,7 @@ Herramientas y Tecnologías utilizadas
 ➢ Github: plataforma utilizada para cargar el proyecto en un repositorio remoto.
 
 ---
-Futuras Líneas
+⏳ Futuras Líneas
 ---
 
 Concluida la etapa inicial del proyecto, orientada al diseño y funcionamiento básico de una plataforma de microcréditos entre personas, se identifican diversas líneas de desarrollo que permitirían optimizar, profundizar y ampliar la base de datos actual:
@@ -724,12 +729,12 @@ La incorporación de mecanismos de respaldo periódico (backup) y recuperación 
 Estas líneas de evolución van a permitir transformar la base de datos en una herramienta más robusta, precisa y escalable, capaz de adaptarse al crecimiento de la plataforma, mejorar los procesos de análisis y gestión del riesgo, y ofrecer una mejor experiencia para todos los usuarios del sistema.
 
 ---
-Dashboard Power BI
+📉 Dashboard Power BI
 ---
 
 📊 [Descargar el archivo Power BI (.pbix)](DASHBOARD.pbix)
 
-Vista previa:
+🖼️ Vista previa:
 
 ![Vista previa del dashboard](IMAGES/Dashboard_Power_BI.png)
 
