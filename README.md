@@ -640,10 +640,98 @@ Los gráficos generados a partir de vistas construidas sobre la base de datos de
 
 El análisis de la distribución geográfica del crédito por provincia evidenció diferencias significativas en la demanda de préstamos. De nueve préstamos otorgados, el 44% se concentró en la provincia de Buenos Aires (cuatro préstamos), mientras que Santa Fe representó el 22% (dos préstamos), y las provincias de Chaco, Mendoza y San Juan registraron un préstamo cada una (11% respectivamente). Esta distribución permite identificar una concentración relativa en ciertas regiones, como en la capital del país, sugiriendo oportunidades para aumentar la asignación de recursos en dichas áreas, o para mejorar la equidad en el acceso al crédito en las restantes.
 
-![Distribucion del Credito por Provincia](IMAGES/Distribucion Credito por Provincia.png)
+![Distribucion del Credito por Provincia](IMAGES/Distribucion_Credito_Provincia.png)
 
+El informe correspondiente al volumen de préstamos por año reflejó la evolución temporal de las solicitudes y del capital prestado. Se observa que en los años 2019, 2020, 2022 y 2023 se otorgó un préstamo en cada período, mientras que en 2024 se registró un aumento significativo con tres préstamos, y en 2025 se otorgaron dos. Asimismo, el análisis del monto total prestado indicó un crecimiento considerable en 2024, en contraste con la caída observada en 2023. Estos datos permiten analizar patrones de aceleración y desaceleración de la actividad crediticia, así como del desempeño de la plataforma y del modelo de negocio.
 
+![Volumen de Prestamos por año](IMAGES/Volumen_Prestamos_año.png)
 
+El gráfico de cantidad de usuarios por segmento de riesgo muestra una mayor concentración en la categoría de riesgo medio (50%) al incluir a cuatro de los ocho usuarios analizados, lo que indica un nivel de exposición moderado en la plataforma en la actualidad. La proporción de usuarios asociados a las categorías de alto y bajo riesgo es la misma (12,5%), con un solicitante cada una, lo que sugiere que los controles realizados contribuyen a contener el riesgo crediticio, pero no son suficientes y deben implementarse mejoras. Por último, la presencia de usuarios sin segmentar (25%) subraya la necesidad de completar la evaluación para asegurar una clasificación integral del portafolio.
+
+![Cantidad de Usuarios por Segmento de Riesgo](IMAGES/Cantidad_Usuarios_Segmento_Riesgo.png)
+
+El análisis de morosidad de los préstamos identifica a los usuarios solicitantes 1, 4 y 10 como aquellos que acumulan un mayor monto pendiente de pago (37.834, 40.250 y 62.925 respectivamente). Los atrasos más prolongados también se registraron en los solicitantes 10 (31 días) y 4 (15 días), lo que indica casos prioritarios para acciones de cobranza y seguimiento. Esto permite reducir el riesgo financiero y mitigar las pérdidas, identificar préstamos con morosidad activa para priorizar la cobranza de las cuotas y notificar al usuario debidamente, y mejorar la toma de decisiones de financiamiento de los prestamistas.
+
+![Analisis de Morosidad de los Prestamos](IMAGES/Analisis_Morosidad_Prestamos.png)
+
+Por último, el informe sobre los objetivos financieros de los préstamos brindó información relevante sobre los principales destinos del financiamiento solicitado. El objetivo de capital fue el más frecuente entre los créditos otorgados, con tres solicitudes, seguido por vivienda, educación y consumo, con dos préstamos cada uno. En términos del monto promedio solicitado, el objetivo capital también registró el valor más alto (63.333), seguido de educación (45.000), vivienda (40.000) y consumo (27.500). Estos resultados permiten conocer los principales destinos de los fondos, ajustar la oferta crediticia a las necesidades reales de los usuarios y analizar el posible impacto social de cada línea de crédito.
+
+![Objetivos Financieros de los Usuarios](IMAGES/Objetivos_Financieros_Usuarios.png)
+
+---
+Herramientas y Tecnologías utilizadas
+---
+
+➢ MySQL Workbench: herramienta utilizada para generar la base de datos relacional de la plataforma, junto con los objetos que la componen (vistas, funciones, stored procedures y triggers) y la versión final del diagrama de entidad-relación.
+
+➢ Draw.io: herramienta en línea utilizada en la primera entrega para realizar el diagrama de entidad-relación.
+
+➢ Google Drive: plataforma utilizada para cargar el proyecto en un repositorio remoto y para elaborar el informe sin perder los avances.
+
+➢ ChatGPT: chatbot de inteligencia artificial utilizado para realizar la inserción de datos en cada tabla.
+
+➢ Power BI: herramienta de Business Intelligence utilizada para elaborar los gráficos de los informes y para crear un dashboard interactivo. Incluye el uso de Power Query para la transformación de los datos, en determinados casos.
+
+➢ Canva: plataforma de diseño gráfico en línea utilizada para realizar la portada del informe y otros diseños.
+
+➢ Github: plataforma utilizada para cargar el proyecto en un repositorio remoto.
+
+---
+Futuras Líneas
+---
+
+Concluida la etapa inicial del proyecto, orientada al diseño y funcionamiento básico de una plataforma de microcréditos entre personas, se identifican diversas líneas de desarrollo que permitirían optimizar, profundizar y ampliar la base de datos actual:
+
+	1) Incorporación de datos reales
+
+La integración de tasas de interés del mercado, indicadores macroeconómicos y datos históricos brindaría mayor realismo a las simulaciones y mayor exactitud en la evaluación de los préstamos.
+
+	2) Mejora en los cálculos financieros
+ 
+La incorporación de tasas de referencia del mercado, junto con el almacenamiento de series históricas, permitiría mejorar los cálculos financieros, reemplazando el cálculo del interés simple y las tasas de retorno dibujadas. Se podrían desarrollar funciones y procedimientos almacenados para estimar indicadores de rentabilidad tales como la Tasa Interna de Retorno (TIR), el Valor Actual Neto (VAN) o el retorno esperado sobre la inversión, adaptados a distintos escenarios (pago, mora o cancelación anticipada).
+
+	3) Automatización de procesos operativos
+
+Ampliar el uso de funciones, procedimientos almacenados y triggers para automatizar ciertas tareas y mejorar la eficiencia del sistema. Por ejemplo, incorporar nuevos disparadores para todos los tipos de transacciones (solo realizado para aportes de dinero, restarían las transacciones por pagos de cuotas, intereses y penalidades) o para automatizar ciertos procedimientos almacenados (como la actualización automática del estado de los préstamos ante cambios en los pagos de las cuotas).
+
+	4) Incorporación de tablas de log o bitácora
+ 
+La incorporación de tablas de log o bitácora (de auditoría) posibilitaría mantener un historial detallado de las modificaciones realizadas en los datos, cumpliendo con los estándares de seguridad e integridad, y facilitando el rastreo de quién efectuó cada cambio, en qué momento y con qué valores. Por ejemplo:
+
+● Historial_Estados_Prestamos: correspondería a los cambios de estado de los préstamos a lo largo del tiempo (auditoría del ciclo de vida del préstamo).
+● Accesos_Usuarios: auditaría los accesos de usuarios al sistema, útil para seguridad y análisis de comportamiento.
+
+	5) Escalabilidad y manejo de grandes volúmenes de datos
+
+Con el crecimiento de usuarios y operaciones, se requerirá adaptar la base de datos para asegurar un rendimiento óptimo. Esto incluye la optimización de inserciones, la segmentación de datos, el uso eficiente de índices y claves foráneas y hasta la incorporación de nuevas tablas normalizadas con información relevante para el sistema, como podrían ser:
+
+● Analisis_Morosidad: consolidaría indicadores de morosidad para cada usuario o préstamo.
+● Documentacion_Usuarios: guardaría la documentación asociada a los usuarios (DNI, comprobantes, contratos, etc).
+● Ingresos_Usuarios: almacenaría los datos de ingreso mensual del usuario (validado o no por un documento), clave para determinar su capacidad de pago.
+
+	6) Ampliación de la información disponible para el usuario
+
+Desarrollar vistas, reportes y dashboards interactivos más completos para ofrecer a los usuarios mayor visibilidad sobre su historial crediticio, rendimiento como prestamistas, estado de préstamos y perfil de riesgo, mejorando la transparencia del sistema.
+
+	7) Profundización en el análisis de morosidad y riesgo
+
+Evolucionar hacia un análisis más detallado del comportamiento crediticio, permitiendo detectar patrones, segmentar por perfil o zona geográfica, y anticipar situaciones de incumplimiento, fortaleciendo los procesos de evaluación y toma de decisiones.
+
+	8) Implementación de mecanismos de respaldo y control transaccional
+
+La incorporación de mecanismos de respaldo periódico (backup) y recuperación de datos garantizaría la disponibilidad e integridad de la información ante posibles fallos del sistema o errores operativos. Asimismo, la implementación del control de transacciones (BEGIN, COMMIT y ROLLBACK) permitiría asegurar la consistencia de los datos en operaciones críticas que involucren múltiples tablas, mejorando la confiabilidad del sistema.
+
+Estas líneas de evolución van a permitir transformar la base de datos en una herramienta más robusta, precisa y escalable, capaz de adaptarse al crecimiento de la plataforma, mejorar los procesos de análisis y gestión del riesgo, y ofrecer una mejor experiencia para todos los usuarios del sistema.
+
+---
+Dashboard Power BI
+---
+
+📊 [Descargar el archivo Power BI (.pbix)](DASHBOARD.pbix)
+
+Vista previa:
+
+![Vista previa del dashboard](IMAGES/Dashboard_Power_BI.png)
 
 
 
