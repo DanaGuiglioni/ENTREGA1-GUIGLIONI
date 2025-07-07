@@ -505,6 +505,7 @@ Este trabajo propone el diseño de una plataforma de microcréditos P2P en MySQL
   
     ```sql
     CALL RegistrarNuevoPrestamo(10, 20000.00, 2, 'Vivienda');
+    
     SELECT * FROM Solicitud_Prestamos WHERE id_solicitante = 10 ORDER BY id_prestamo DESC LIMIT 1;
     ```
 
@@ -625,17 +626,17 @@ Este trabajo propone el diseño de una plataforma de microcréditos P2P en MySQL
 📁 Archivos SQL
 ---
 
-🛠️ [Creacion de Base de Datos y Tablas](SCRIPTS/01-STRUCTURE.sql)
+🛠️ [Creación de Base de Datos y Tablas](SCRIPTS/01-STRUCTURE.sql)
 
 📥 [Inserción de Datos](SCRIPTS/02-POPULATION.sql)
 
-🔍 [Creacion de Vistas](SCRIPTS/03-VIEWS.sql)
+🔍 [Creación de Vistas](SCRIPTS/03-VIEWS.sql)
 
-📈 [Creacion de Funciones](SCRIPTS/04-FUNCTIONS.sql)
+📈 [Creación de Funciones](SCRIPTS/04-FUNCTIONS.sql)
 
-⏱️ [Creacion de Procedimientos Almacenados](SCRIPTS/05-STORED-PROCEDURES.sql)
+⏱️ [Creación de Procedimientos Almacenados](SCRIPTS/05-STORED-PROCEDURES.sql)
 
-✅ [Creacion de Triggers](SCRIPTS/06-TRIGGERS.sql)
+✅ [Creación de Triggers](SCRIPTS/06-TRIGGERS.sql)
 
 ---
 📊 Informes
